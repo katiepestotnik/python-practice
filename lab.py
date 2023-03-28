@@ -41,3 +41,12 @@ def map (list, callback):
     return new_list
 
 print(map([1,2,3,4], lambda item, idx: item + 5))
+
+def filter (list, callback):
+    new_list = []
+    for idx, item in enumerate(list):
+        if (callback(item, idx)):
+            new_list.append(item)
+    return new_list
+
+print(filter([1,2,3,4,5], lambda item, idx: item % 2 == 0))
