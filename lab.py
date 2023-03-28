@@ -50,3 +50,11 @@ def filter (list, callback):
     return new_list
 
 print(filter([1,2,3,4,5], lambda item, idx: item % 2 == 0))
+
+def make_person(name, age):
+    return {
+        'name': name,
+        'age': age
+    }
+
+print(make_person(('Katie'), 21))
