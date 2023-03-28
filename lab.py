@@ -25,3 +25,11 @@ def calculator(num1, num2, operator):
     if(operator == '/'):
         return f'{num1} / {num2} = {num1 / num2}' if num2 != 0 else 'Can\'t divide by 0'
 print(calculator(2,0,'/'))
+import random, math
+def random_number(low, max):
+    while True:
+       random_num =  math.floor(random.random() * max)
+       if random_num >= low and random_num <= max:
+            return random_num
+
+print('this is random', random_number(10, 20))
