@@ -14,3 +14,14 @@ def fizz_buzz (num):
             result = 'buzz'
         print(f'{i} = {result}')
 fizz_buzz(16)
+
+def calculator(num1, num2, operator):
+    if(operator == '+'):
+        return f'{num1} + {num2} = {num1 + num2}'
+    if(operator == '-'):
+        return f'{num1} - {num2} = {num1 - num2}'
+    if(operator == '*'):
+        return f'{num1} * {num2} = {num1 * num2}'
+    if(operator == '/'):
+        return f'{num1} / {num2} = {num1 / num2}' if num2 != 0 else 'Can\'t divide by 0'
+print(calculator(2,0,'/'))
