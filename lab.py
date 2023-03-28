@@ -33,3 +33,11 @@ def random_number(low, max):
             return random_num
 
 print('this is random', random_number(10, 20))
+
+def map (list, callback):
+    new_list = []
+    for idx, item in enumerate(list):
+        new_list.append(callback(item, idx))
+    return new_list
+
+print(map([1,2,3,4], lambda item, idx: item + 5))
